@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const areaMensagem = document.getElementById('areaMensagem');
 
     // Adiciona um "ouvinte de evento" para o clique no botão
+    isContentVisible = false
     botao.addEventListener('click', function() {
-        // Quando o botão for clicado, esta função será executada
-
-        // Define o texto que aparecerá no parágrafo 'areaMensagem'
-        // Você pode trocar esta mensagem por qualquer outra que preferir!
-        areaMensagem.textContent = "Seja bem-vindo(a) à minha página! O sucesso é a soma de pequenos esforços repetidos dia após dia.";
-    });
-
-});
+        if (!isContentVisible) {
+            areaMensagem.textContent = "Você não precisa salvar o mundo para encontrar sentido na vida. Às vezes, tudo que você precisa é de algo simples, como alguém para cuidar.";
+            isContentVisible = true;
+        } else {
+            areaMensagem.textContent = '';
+            isContentVisible = false;
+        }
+    }
+)});
