@@ -1,0 +1,111 @@
+/* 1. O fundo da página deve ter uma cor suave */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; /* Um cinza-azulado bem claro */
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* 2. O título (h1) deve ter uma cor diferente e estar centralizado */
+h1 {
+    color: #005f73; /* Azul escuro */
+    text-align: center;
+}
+
+h2 {
+    color: #0a9396; /* Azul intermediário */
+    border-bottom: 2px solid #e9d8a6;
+    padding-bottom: 5px;
+}
+
+/* 3. O parágrafo (p) deve ter um tamanho de fonte maior e ser justificado */
+p {
+    font-size: 1.1em; /* Um pouco maior que o padrão */
+    text-align: justify;
+}
+
+/* 4. A lista (ul) deve ter um espaçamento maior entre os itens */
+ul li {
+    margin-bottom: 12px; /* Espaçamento abaixo de cada item da lista */
+}
+
+/* 5. A imagem (img) deve ter bordas arredondadas e um tamanho adequado */
+.hobby-image {
+    display: block; /* Permite centralizar com margin */
+    max-width: 400px; /* Largura máxima */
+    width: 100%; /* Garante responsividade */
+    height: auto; /* Mantém a proporção */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin: 20px auto; /* Centraliza a imagem horizontalmente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* 6. A tabela (table) deve estar estilizada */
+table {
+    width: 80%; /* Largura da tabela */
+    margin: 30px auto; /* Centraliza a tabela na página */
+    border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table td {
+    border: 1px solid #ddd; /* Borda cinza clara para as células */
+    padding: 12px; /* Espaçamento interno nas células */
+    text-align: center; /* Centraliza o texto */
+    vertical-align: middle; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilo para as imagens dentro da tabela */
+table img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px; /* Bordas levemente arredondadas */
+}
+
+/* Efeito de hover nas linhas da tabela */
+table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* 7. O link (a) deve mudar de cor quando o usuário passar o mouse sobre ele */
+a {
+    color: #0077b6; /* Cor padrão do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ee9b00; /* Cor do link ao passar o mouse (Laranja) */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.link-externo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilo do botão e da área da mensagem */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0a9396;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+#areaMensagem {
+    text-align: center;
+    font-weight: bold;
+    color: #005f73;
+    min-height: 25px; /* Garante que o layout não "pule" quando a mensagem aparece */
+}
