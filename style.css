@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    color: #4270a1; 
+    text-align: center;
+}
+
+h2 {
+    color: #3a6491; 
+    border-bottom: 2px solid #17283b;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.1em; 
+    text-align: justify;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+.hobby-image {
+    display: block; 
+    max-width: 400px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table td {
+    border: 1px solid #ddd; 
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+table tr:hover {
+    background-color: #e9ecef;
+}
+
+a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #264260;
+    text-decoration: underline;
+}
+
+.link-externo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4f8ac9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #61a5ed;
+}
+
+#areaMensagem {
+    text-align: center;
+    font-weight: bold;
+    color: #497fb8;
+    min-height: 25px;
+}
