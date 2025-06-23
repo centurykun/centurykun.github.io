@@ -1,13 +1,9 @@
-// Aguarda o conteúdo da página ser totalmente carregado
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Seleciona o botão pelo seu ID
     const botao = document.getElementById('botaoMensagem');
 
-    // Seleciona o parágrafo onde a mensagem será exibida
     const areaMensagem = document.getElementById('areaMensagem');
 
-    // Adiciona um "ouvinte de evento" para o clique no botão
     isContentVisible = false
     botao.addEventListener('click', function() {
         if (!isContentVisible) {
