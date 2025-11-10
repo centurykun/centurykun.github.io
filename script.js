@@ -1,17 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const nome = document.getElementById('nome');
+        const email = document.getElementById('email');
+        const mensagem = document.getElementById('mensagem');
 
-    const botao = document.getElementById('botaoMensagem');
-
-    const areaMensagem = document.getElementById('areaMensagem');
-
-    isContentVisible = false
-    botao.addEventListener('click', function() {
-        if (!isContentVisible) {
-            areaMensagem.textContent = "Você não precisa salvar o mundo para encontrar sentido na vida. Às vezes, tudo que você precisa é de algo simples, como alguém para cuidar.";
-            isContentVisible = true;
-        } else {
-            areaMensagem.textContent = '';
-            isContentVisible = false;
+        if (nome.value.trim() === '' || email.value.trim() === '' || mensagem.value.trim() === '') {
+            alert('Por favor, preencha todos os campos do formulário.');
+            return;
         }
-    }
-)});
+        
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value.trim())) {
+            alert('Por favor, insira um endereço de e-mail válido.');
+            return;
+        }
+
+        alert('Obrigado por entrar em contato! Responderemos em breve.');
+        contactForm.reset();
+    });
+});
